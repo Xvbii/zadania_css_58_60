@@ -1,0 +1,10 @@
+div#blok1_burzynski:hover { background-color: yellow; font-size: 36mm;}
+div#blok1_burzynski { width: 603; background-color: green;}
+div#blok2_burzynski:hover { background-color: red; font-size: 36mm;}
+div#blok2_burzynski { width: 603; background-color: green;}
+div#blok3_burzynski:hover { background-color: blue; font-size: 36mm;}
+div#blok3_burzynski { width: 603; background-color: green;}
+
+
+/*Pseudo klasa :hover; jest używana gdy użytkownik wchodzi w interakcję z elementem za pomoca urządzenia wskazującego, ale niekoniecznie go aktywuje (czyli np. wskaże element kursorem myszy).*/
+/*Jakub Burzyński*/

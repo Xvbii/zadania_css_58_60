@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+			<style>
+			.punkt {font-family: Arial;}
+			.tede {align: left; border-right: 1px solid black; border-bottom: 1px solid black; width: 80px; background: #edc591;}
+			.tabelka {border: 1px solid black;}
+			.odpowiedzi{ border-bottom: 1px solid black; background: #fffdfa;}
+			.koniec {border-right: 1px solid black; background: #edc591;}
+			.area {width: 400px; height: 220px; resize: none;}
+			.areadwa {width: 400px; height: 336px; resize: none;}
+			.areatrzy {width: 400px; height: 111px; resize: none;}
+			.ostatni {background: #fffdfa;}
+			</style>
+	</head>
+	
+	<body bgcolor="#ffedd6">
+<ol>
+	<H1><li>Co to są pseudoklasyk?</H1></li>
+	<ul type="disc">
+	<li class="punkt">CSS przewiduje kilka ściśle określonych klas pozwalających na<br>
+	formatowanie niektórych elementów dokumentu są to Pseudoklasy.</li>
+	</ul>
+	<H1><li>Uwaga dotycząca dwukropka:</H1></li>
+	<ul type="disc">
+	<li class="punkt">Szalenie istotnym elementem w tej konstrukcji jest dwukropek<br>
+	występujący pomiędzy selektorem a nazwą klasy.</li>
+	</ul>
+	<H1><li>Tabela opisującą pseudoklasy.</H1></li>
+	<ul type="disc">
+	<li class="punkt">Tabela opisu pseudoklas
+	<table class="tabelka"><tr><td class="tede"><b>A:link,</b></td>
+	<td class="odpowiedzi">odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone.</td></tr>
+	<tr><td class="tede"><b>A:visited,</b></td>
+	<td class="odpowiedzi">odpowiada za formatowanie hiperłącza już odwiedzonego.</td></tr>
+	<tr><td class="tede"><b>A:hover,</b></td>
+	<td class="odpowiedzi">zmiany pewnych elementów po najechaniu na nie urządzeniem<br>
+	wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor lub element blokowy DIV.</td></tr>
+	<tr><td class="tede"><b>A:active,</b></td>
+	<td class="odpowiedzi">pozwala nadać dowolne formatowanie elementowi po nakierowaniu<br>
+	na niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego zwolnieniem<br>
+	(odsyłacz aktywnykliknięty).</td></tr>
+	<tr><td class="tede"><b>A:focus,</b></td>
+	<td class="odpowiedzi">jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był<br>
+	formatowany innym kolorem. Odsyłacz posiadający tzw fokus-zaznaczony przy poruszaniu<br>
+	się po dokumencie przy pomocy klawisza tabulacji: naciśnięcie w tym momencie klawisza<br>
+	ENTER spowoduje taką reakcję przeglądarki, jakby dany odsyłacz został kliknięty</td></tr>
+	<tr><td class="tede"><b>:lang,</b></td>
+	<td class="odpowiedzi">formatowanie wielojęzykowych dokumentów.</td></tr>
+	<tr><td class="koniec"><b>:first-child</b></td>
+	<td class="ostatni">umożliwia określenie formatowania dla pierwszego dziecka wybranego elementu.</td></tr>
+	</table>
+	</li>
+	</ul>
+	<H1><li>Zastosowanie pseudoklasy :active</H1></li>
+	<ul type="disc">
+	<li class="punkt">1)można używać jako uzupełnienia definicji odnośników
+	<li class="punkt">2)jako elementu poprawiającego czytelność formularzy.</li>
+	</ul>
+	<H1><li>Przykłady (trzy) kodów definiowania pseudoklas (wraz z tematem)</H1></li>
+	<ul type="none">
+	<li class="punkt"><br>
+	<textarea class="area" disabled>
+Przykład 1
+Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu taki odnośnik będzie miał kolor zielony.
+A:link
+{
+color:red;
+}
+A:visited
+{
+color:green;
+}</textarea><br><br>
+<textarea class="areadwa" disabled>
+Przykład 2
+Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.
+A /* Definicja odsyłacza podstawowego*/
+{
+font-size:12pt;
+text-decoration:none;
+}
+A:link
+{
+color:navy;
+}
+A:visited
+{
+color:green;
+}
+A:hover
+{
+color:red;
+text-decoration:underline;
+}
+</textarea> <br><br>
+<textarea class="areatrzy" disabled>
+Przykład 3
+Temat: Zastosowanie :focus
+A:focus
+{
+color:braun;
+}
+</textarea>
+	</li>
+	</ul>
+	</ol>
+	
+	</body>
+</html>
